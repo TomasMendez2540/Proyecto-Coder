@@ -1,0 +1,238 @@
+
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main" "footer";
+    background-color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* header */
+
+
+header{
+    background-color: rgb(57, 137, 153);
+    height: 100px;
+    width: 100%; 
+    box-shadow: (10px 10px 10px 10px black);
+    grid-area: header;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo{
+    display: inline;
+}
+
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+.navMenu{
+    display: flex;
+    line-height: 50px;
+    
+}
+
+.navMenu li{
+    display: inline-flex;
+    margin-left: 50px;
+}
+
+.inicioDeSesion{
+    display: flex;
+    align-items: baseline;    
+}
+
+.tituloInicioSesion{
+    display: flex;
+    padding-right: 5px;
+}
+
+/* main */
+
+main{
+    grid-area: main;
+}
+
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main p{
+    text-align: center;
+}
+
+.imagenPartituras{
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+ 
+.articulos{
+    display: flex;
+    justify-content: center;
+}
+
+.articleIndex{
+    background-color: rgb(239, 161, 16);
+    height: 200px;
+    width: 200px;
+    overflow: auto;
+    margin: 70px;
+    padding: 10px;
+    display: inline-block;
+    justify-items: center;
+    border-radius: 15%;
+}
+
+.tituloArticleIndex{
+    text-align: center;
+}
+
+#comentariosExperiencias{
+    display: flex;
+    align-self: auto;
+    padding-left: 35%;
+}
+
+.titulosCursos{
+    display: flex;
+    background-color: rgb(239, 161, 16);
+    height: 50px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.tablaPreciosCursos{
+    display: flex;
+    margin: 50px;
+    padding-left: 35%;
+    align-content: center;
+}
+
+ 
+
+
+/* footer */
+
+
+footer{    
+    background-color: rgb(57, 137, 153);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;  
+    box-shadow: (10px 10px 10px 10px black);
+    grid-area: footer;
+
+}
+
+footer li{
+    display: inline-flex;
+}
+
+.navFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.navFooterItems{
+    margin-left: 30px;
+}
+
+/* Medias */
+
+@media screen and (max-width: 320px) {
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header" "main" "footer";
+        background-color: beige;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .inicioDeSesion{
+
+        display: none;
+    }
+    .articulos{
+        display: grid;
+        width: 320px;
+        
+    }
+    .navMenu{
+        display: none; 
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     footer {
+        width: 320px;
+    }
+  
+
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header" "main" "footer";
+        background-color: beige;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .inicioDeSesion{
+
+        display: none;
+    }
+    .articulos{
+        display: grid;
+        width: 768px;
+        
+    }
+    .navMenu{
+        display: none; 
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     footer {
+        width: 768px;
+    }
+    
+}
