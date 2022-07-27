@@ -30,7 +30,7 @@ nav{
     display: inline;
 }
 
-a{
+header a{
     color: orange;
     text-decoration: none;
 }
@@ -115,25 +115,55 @@ main h3{
     padding-left: 35%;
 }
 
-.titulosCursos{
+.cardsCursos{
+    width: 100%;
     display: flex;
+    max-width: auto;
+}
+
+.cursos{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
     background-color: rgb(239, 161, 16);
-    height: 50px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    justify-content: space-around;
+}
+
+.cursos:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-3%);
 }
 
 .tablaPreciosCursos{
     display: flex;
-    margin: 50px;
-    padding-left: 35%;
-    align-content: center;
+    margin: 50px;    
+    justify-content: center;
 }
 
- 
+ .cardsCursos .cursos{
+    padding: 10px;
+    text-align: center;
+ }
 
+ .objetivosCursos{
+    text-align: start;
+ }
+
+ .cardsCursos .cursos a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(57, 137, 153);
+    border: 1px solid rgb(40, 125, 139);
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+ }
 
 /* footer */
 
@@ -167,6 +197,11 @@ footer li{
     margin-left: 30px;
 }
 
+footer a{
+    color: orange;
+    text-decoration: none;
+}
+
 /* Medias */
 
 @media screen and (max-width: 320px) {
@@ -198,6 +233,21 @@ footer li{
     }
      footer {
         width: 320px;
+    }
+
+    .cardsCursos{
+        width: 100%;
+        display: flex;
+        max-width: 1100px;
+        justify-content: space-evenly;
+    }
+    
+    .cursos{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: rgb(239, 161, 16);
     }
   
 
@@ -235,4 +285,18 @@ footer li{
         width: 768px;
     }
     
+    .cardsCursos{
+        width: 100%;
+        display: flex;
+        max-width: 1100px;
+        justify-content: space-evenly;
+    }
+    
+    .cursos{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: rgb(239, 161, 16);
+    }
 }
