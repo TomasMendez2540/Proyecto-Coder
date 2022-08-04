@@ -48,7 +48,8 @@ header a{
 
 .inicioDeSesion{
     display: flex;
-    align-items: baseline;    
+    align-items: baseline;
+    align-content: flex-end;    
 }
 
 .tituloInicioSesion{
@@ -107,6 +108,8 @@ main h3{
 
 .tituloArticleIndex{
     text-align: center;
+    font-size: larger;
+    font-style: bold;
 }
 
 #comentariosExperiencias{
