@@ -49,7 +49,8 @@ header a{
 .inicioDeSesion{
     display: flex;
     align-items: baseline;
-    align-content: flex-end;    
+    align-content: flex-end;
+    padding-left: 30%;    
 }
 
 .tituloInicioSesion{
@@ -226,9 +227,6 @@ footer a{
         width: 320px;
         
     }
-    .navMenu{
-        display: none; 
-    }
     nav {
         display: flex;
         flex-direction: column;
@@ -275,9 +273,6 @@ footer a{
         display: grid;
         width: 768px;
         
-    }
-    .navMenu{
-        display: none; 
     }
     nav {
         display: flex;
