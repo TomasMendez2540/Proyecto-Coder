@@ -1,300 +1,274 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
+  background-color: beige;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
-body{
+/* header */
+header {
+  background-color: rgb(57, 137, 153);
+  height: 100px;
+  width: 100%;
+  box-shadow: 10px 10px 10px 10px black;
+  grid-area: header;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  display: inline;
+}
+
+header a {
+  color: orange;
+  text-decoration: none;
+}
+
+.navMenu {
+  display: flex;
+  line-height: 50px;
+}
+
+.navMenu li {
+  display: inline-flex;
+  margin-left: 50px;
+}
+
+.inicioDeSesion {
+  display: flex;
+  align-items: baseline;
+  align-content: flex-end;
+  padding-left: 30%;
+}
+
+.tituloInicioSesion {
+  display: flex;
+  padding-right: 5px;
+}
+
+/* main */
+main {
+  grid-area: main;
+}
+
+main h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main p {
+  text-align: center;
+}
+
+.imagenLibro {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.articulos {
+  display: flex;
+  justify-content: center;
+}
+
+.articleIndex {
+  background-color: rgb(239, 161, 16);
+  height: 200px;
+  width: 200px;
+  overflow: auto;
+  margin: 70px;
+  padding: 10px;
+  display: inline-block;
+  justify-items: center;
+  border-radius: 15%;
+}
+
+.tituloArticleIndex {
+  text-align: center;
+  font-size: larger;
+  font-style: bold;
+}
+
+#comentariosExperiencias {
+  display: flex;
+  align-self: auto;
+  padding-left: 35%;
+}
+
+.cardsCursos {
+  width: 100%;
+  display: flex;
+  max-width: auto;
+}
+
+.cursos {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgb(239, 161, 16);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  justify-content: space-around;
+}
+
+.cursos:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.tablaPreciosCursos {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+.cardsCursos .cursos {
+  padding: 10px;
+  text-align: center;
+}
+
+.objetivosCursos {
+  text-align: start;
+}
+
+.cardsCursos .cursos a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(57, 137, 153);
+  border: 1px solid rgb(40, 125, 139);
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+/* footer */
+footer {
+  background-color: rgb(57, 137, 153);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  box-shadow: 10px 10px 10px 10px black;
+  grid-area: footer;
+}
+
+footer li {
+  display: inline-flex;
+}
+
+.navFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navFooterItems {
+  margin-left: 30px;
+}
+
+footer a {
+  color: orange;
+  text-decoration: none;
+}
+
+/* Medias */
+@media screen and (max-width: 320px) {
+  body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: "header" "main" "footer";
     background-color: beige;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-/* header */
-
-
-header{
-    background-color: rgb(57, 137, 153);
-    height: 100px;
-    width: 100%; 
-    box-shadow: (10px 10px 10px 10px black);
-    grid-area: header;
-}
-
-nav{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .inicioDeSesion {
+    display: none;
+  }
+  .articulos {
+    display: grid;
+    width: 320px;
+  }
+  nav {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.logo{
-    display: inline;
-}
-
-header a{
-    color: orange;
-    text-decoration: none;
-}
-
-.navMenu{
-    display: flex;
-    line-height: 50px;
-    
-}
-
-.navMenu li{
-    display: inline-flex;
-    margin-left: 50px;
-}
-
-.inicioDeSesion{
-    display: flex;
-    align-items: baseline;
-    align-content: flex-end;
-    padding-left: 30%;    
-}
-
-.tituloInicioSesion{
-    display: flex;
-    padding-right: 5px;
-}
-
-/* main */
-
-main{
-    grid-area: main;
-}
-
-main h1{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-main p{
-    text-align: center;
-}
-
-.imagenLibro{
-    display: flex;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main h2{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-main h3{
-    text-align: center;
-    text-transform: uppercase;
-}
- 
-.articulos{
-    display: flex;
-    justify-content: center;
-}
-
-.articleIndex{
-    background-color: rgb(239, 161, 16);
-    height: 200px;
-    width: 200px;
-    overflow: auto;
-    margin: 70px;
-    padding: 10px;
-    display: inline-block;
-    justify-items: center;
-    border-radius: 15%;
-}
-
-.tituloArticleIndex{
-    text-align: center;
-    font-size: larger;
-    font-style: bold;
-}
-
-#comentariosExperiencias{
-    display: flex;
-    align-self: auto;
-    padding-left: 35%;
-}
-
-.cardsCursos{
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    width: 320px;
+  }
+  .cardsCursos {
     width: 100%;
     display: flex;
-    max-width: auto;
-}
-
-.cursos{
+    max-width: 1100px;
+    justify-content: space-evenly;
+  }
+  .cursos {
     width: 100%;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
     background-color: rgb(239, 161, 16);
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    justify-content: space-around;
+  }
 }
-
-.cursos:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
-    transform: translateY(-3%);
-}
-
-.tablaPreciosCursos{
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main" "footer";
+    background-color: beige;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .inicioDeSesion {
+    display: none;
+  }
+  .articulos {
+    display: grid;
+    width: 768px;
+  }
+  nav {
     display: flex;
-    margin: 50px;    
-    justify-content: center;
-}
-
- .cardsCursos .cursos{
-    padding: 10px;
-    text-align: center;
- }
-
- .objetivosCursos{
-    text-align: start;
- }
-
- .cardsCursos .cursos a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(57, 137, 153);
-    border: 1px solid rgb(40, 125, 139);
-    border-radius: 4px;
-    transition: all 400ms ease;
-
- }
-
-/* footer */
-
-
-footer{    
-    background-color: rgb(57, 137, 153);
-    height: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    width: 768px;
+  }
+  .cardsCursos {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    overflow: auto;  
-    box-shadow: (10px 10px 10px 10px black);
-    grid-area: footer;
-
-}
-
-footer li{
-    display: inline-flex;
-}
-
-.navFooter{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.navFooterItems{
-    margin-left: 30px;
-}
-
-footer a{
-    color: orange;
-    text-decoration: none;
-}
-
-/* Medias */
-
-@media screen and (max-width: 320px) {
-    body{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "header" "main" "footer";
-        background-color: beige;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
-    }
-    .inicioDeSesion{
-
-        display: none;
-    }
-    .articulos{
-        display: grid;
-        width: 320px;
-        
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-     footer {
-        width: 320px;
-    }
-
-    .cardsCursos{
-        width: 100%;
-        display: flex;
-        max-width: 1100px;
-        justify-content: space-evenly;
-    }
-    
-    .cursos{
-        width: 100%;
-        margin: 20px;
-        border-radius: 6px;
-        overflow: hidden;
-        background-color: rgb(239, 161, 16);
-    }
-  
-
-}
-
-
-@media screen and (max-width: 768px) {
-    body{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "header" "main" "footer";
-        background-color: beige;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
-    }
-    .inicioDeSesion{
-
-        display: none;
-    }
-    .articulos{
-        display: grid;
-        width: 768px;
-        
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-     footer {
-        width: 768px;
-    }
-    
-    .cardsCursos{
-        width: 100%;
-        display: flex;
-        max-width: 1100px;
-        justify-content: space-evenly;
-    }
-    
-    .cursos{
-        width: 100%;
-        margin: 20px;
-        border-radius: 6px;
-        overflow: hidden;
-        background-color: rgb(239, 161, 16);
-    }
-}
+    max-width: 1100px;
+    justify-content: space-evenly;
+  }
+  .cursos {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgb(239, 161, 16);
+  }
+}/*# sourceMappingURL=style.css.map */
