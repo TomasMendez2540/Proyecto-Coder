@@ -12,43 +12,36 @@ header {
   background-color: rgb(57, 137, 153);
   height: 100px;
   width: 100%;
-  box-shadow: 10px 10px 10px 10px black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.349);
   grid-area: header;
 }
-
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-
-.logo {
+header .logo {
   display: inline;
 }
-
 header a {
   color: orange;
   text-decoration: none;
 }
-
-.navMenu {
+header .navMenu {
   display: flex;
   line-height: 50px;
 }
-
-.navMenu li {
+header .navMenu li {
   display: inline-flex;
   margin-left: 50px;
 }
-
-.inicioDeSesion {
+header .inicioDeSesion {
   display: flex;
   align-items: baseline;
   align-content: flex-end;
   padding-left: 30%;
 }
-
-.tituloInicioSesion {
+header .tituloInicioSesion {
   display: flex;
   padding-right: 5px;
 }
@@ -175,24 +168,20 @@ footer {
   box-shadow: 10px 10px 10px 10px black;
   grid-area: footer;
 }
-
 footer li {
   display: inline-flex;
 }
-
-.navFooter {
+footer a {
+  color: orange;
+  text-decoration: none;
+}
+footer .navFooter {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.navFooterItems {
+footer .navFooterItems {
   margin-left: 30px;
-}
-
-footer a {
-  color: orange;
-  text-decoration: none;
 }
 
 /* Medias */
