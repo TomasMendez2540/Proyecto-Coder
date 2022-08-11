@@ -1,0 +1,93 @@
+
+@import "variables";
+
+@media screen and (max-width: 320px) {
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header" "main" "footer";
+        background-color: beige;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .inicioDeSesion{
+
+        display: none;
+    }
+    .articulos{
+        display: grid;
+        width: 320px;
+        
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     footer {
+        width: 320px;
+    }
+
+    .cardsCursos{
+        width: 100%;
+        display: flex;
+        max-width: 1100px;
+        justify-content: space-evenly;
+    }
+    
+    .cursos{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: $colorPrincipal;
+    }
+  
+
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header" "main" "footer";
+        background-color: beige;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .inicioDeSesion{
+
+        display: none;
+    }
+    .articulos{
+        display: grid;
+        width: 768px;
+        
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     footer {
+        width: 768px;
+    }
+    
+    .cardsCursos{
+        width: 100%;
+        display: flex;
+        max-width: 1100px;
+        justify-content: space-evenly;
+    }
+    
+    .cursos{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: $colorPrincipal;
+    }
+}
