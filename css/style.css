@@ -24,7 +24,7 @@ header .logo {
   display: inline;
 }
 header a {
-  color: orange;
+  color: rgb(239, 161, 16);
   text-decoration: none;
 }
 header .navMenu {
@@ -165,14 +165,14 @@ footer {
   align-items: center;
   justify-content: space-between;
   overflow: auto;
-  box-shadow: 10px 10px 10px 10px black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.349);
   grid-area: footer;
 }
 footer li {
   display: inline-flex;
 }
 footer a {
-  color: orange;
+  color: rgb(239, 161, 16);
   text-decoration: none;
 }
 footer .navFooter {

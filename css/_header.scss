@@ -1,0 +1,39 @@
+
+@import "variables";
+
+header{
+    background-color: rgb(57, 137, 153);
+    height: 100px;
+    width: 100%; 
+    box-shadow: (5px 5px 5px 5px rgba(0, 0, 0, 0.349));
+    grid-area: header;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .logo{
+        display: inline;
+    }
+    a{color: $colorPrincipal;
+        text-decoration: none;
+    }
+    .navMenu{
+        display: flex;
+        line-height: 50px;
+        li{
+            display: inline-flex;
+            margin-left: 50px; 
+        }
+    }
+    .inicioDeSesion{
+        display: flex;
+        align-items: baseline;
+        align-content: flex-end;
+        padding-left: 30%;    
+    }
+    .tituloInicioSesion{
+        display: flex;
+        padding-right: 5px;
+    }
+}
