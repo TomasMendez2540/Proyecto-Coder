@@ -1,8 +1,8 @@
 
-@import "variables";
+@import "maps-variables";
 
 footer{
-    background-color: rgb(57, 137, 153);
+    background-color: $colorSecundario;
     height: 50px;
     width: 100%;
     display: flex;

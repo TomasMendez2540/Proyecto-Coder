@@ -1,0 +1,96 @@
+
+@import "maps-variables";
+
+main{
+    grid-area: main;
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+    }
+    .imagenLibro{
+        display: flex;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    h3{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .articulos{
+        display: flex;
+        justify-content: center;
+    }
+    .articleIndex{
+        @extend .cursos;
+        background-color: $colorPrincipal;
+        height: 200px;
+        width: 200px;
+        overflow: auto;
+        margin: 70px;
+        padding: 10px;
+        display: inline-block;
+        justify-items: center;
+        border-radius: 15%;
+    }
+    .tituloArticleIndex{
+        text-align: center;
+        font-size: larger;
+        font-style: bold;
+    }
+    #comentariosExperiencias{
+        display: flex;
+        align-self: auto;
+        padding-left: 35%;
+    }
+    .cursos{
+        width: 100%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: $colorPrincipal;
+        box-shadow: map-get($cardsCursos, borde );
+        cursor: default;
+        transition: all 400ms ease;
+        justify-content: space-around;
+    }
+    .cardsCursos{
+        width: 100%;
+        display: flex;
+        max-width: auto;
+        .cursos{
+            padding: 10px;
+            text-align: center;
+         }
+         a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            color: rgb(57, 137, 153);
+            border: 1px solid $colorSecundario;
+            border-radius: 4px;
+            transition: all 400ms ease;
+        
+         }
+    }
+    .cursos:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+        transform: translateY(-3%);
+    }
+    .tablaPreciosCursos{
+        display: flex;
+        margin: 50px;    
+        justify-content: center;
+    }    
+    .objetivosCursos{
+        text-align: start;
+     }
+}
