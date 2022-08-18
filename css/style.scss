@@ -1,5 +1,5 @@
 
-@import "variables";
+@import "maps-variables";
 
 body{
     display: grid;
@@ -17,114 +17,8 @@ body{
 
 /* main */
 
-main{
-    grid-area: main;
-}
+@import "main"; 
 
-main h1{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-main p{
-    text-align: center;
-}
-
-.imagenLibro{
-    display: flex;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-main h2{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-main h3{
-    text-align: center;
-    text-transform: uppercase;
-}
- 
-.articulos{
-    display: flex;
-    justify-content: center;
-}
-
-.articleIndex{
-    background-color: $colorPrincipal;
-    height: 200px;
-    width: 200px;
-    overflow: auto;
-    margin: 70px;
-    padding: 10px;
-    display: inline-block;
-    justify-items: center;
-    border-radius: 15%;
-}
-
-.tituloArticleIndex{
-    text-align: center;
-    font-size: larger;
-    font-style: bold;
-}
-
-#comentariosExperiencias{
-    display: flex;
-    align-self: auto;
-    padding-left: 35%;
-}
-
-.cardsCursos{
-    width: 100%;
-    display: flex;
-    max-width: auto;
-}
-
-.cursos{
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: $colorPrincipal;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    justify-content: space-around;
-}
-
-.cursos:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
-    transform: translateY(-3%);
-}
-
-.tablaPreciosCursos{
-    display: flex;
-    margin: 50px;    
-    justify-content: center;
-}
-
- .cardsCursos .cursos{
-    padding: 10px;
-    text-align: center;
- }
-
- .objetivosCursos{
-    text-align: start;
- }
-
- .cardsCursos .cursos a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(57, 137, 153);
-    border: 1px solid rgb(40, 125, 139);
-    border-radius: 4px;
-    transition: all 400ms ease;
-
- }
 
 /* footer */
 

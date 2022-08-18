@@ -8,6 +8,7 @@ body {
 }
 
 /* header */
+
 header {
   background-color: rgb(57, 137, 153);
   height: 100px;
@@ -47,42 +48,36 @@ header .tituloInicioSesion {
 }
 
 /* main */
+
 main {
   grid-area: main;
 }
-
 main h1 {
   text-align: center;
   text-transform: uppercase;
 }
-
 main p {
   text-align: center;
 }
-
-.imagenLibro {
+main .imagenLibro {
   display: flex;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
 }
-
 main h2 {
   text-align: center;
   text-transform: uppercase;
 }
-
 main h3 {
   text-align: center;
   text-transform: uppercase;
 }
-
-.articulos {
+main .articulos {
   display: flex;
   justify-content: center;
 }
-
-.articleIndex {
+main .articleIndex {
   background-color: rgb(239, 161, 16);
   height: 200px;
   width: 200px;
@@ -93,26 +88,17 @@ main h3 {
   justify-items: center;
   border-radius: 15%;
 }
-
-.tituloArticleIndex {
+main .tituloArticleIndex {
   text-align: center;
   font-size: larger;
   font-style: bold;
 }
-
-#comentariosExperiencias {
+main #comentariosExperiencias {
   display: flex;
   align-self: auto;
   padding-left: 35%;
 }
-
-.cardsCursos {
-  width: 100%;
-  display: flex;
-  max-width: auto;
-}
-
-.cursos {
+main .cursos {
   width: 100%;
   margin: 20px;
   border-radius: 6px;
@@ -123,28 +109,16 @@ main h3 {
   transition: all 400ms ease;
   justify-content: space-around;
 }
-
-.cursos:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.tablaPreciosCursos {
+main .cardsCursos {
+  width: 100%;
   display: flex;
-  margin: 50px;
-  justify-content: center;
+  max-width: auto;
 }
-
-.cardsCursos .cursos {
+main .cardsCursos .cursos {
   padding: 10px;
   text-align: center;
 }
-
-.objetivosCursos {
-  text-align: start;
-}
-
-.cardsCursos .cursos a {
+main .cardsCursos a {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -154,8 +128,21 @@ main h3 {
   border-radius: 4px;
   transition: all 400ms ease;
 }
+main .cursos:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+main .tablaPreciosCursos {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+main .objetivosCursos {
+  text-align: start;
+}
 
 /* footer */
+
 footer {
   background-color: rgb(57, 137, 153);
   height: 50px;
@@ -185,6 +172,7 @@ footer .navFooterItems {
 }
 
 /* Medias */
+
 @media screen and (max-width: 320px) {
   body {
     display: grid;
