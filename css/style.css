@@ -1,7 +1,6 @@
-/*variables*/
 body {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer";
   background-color: beige;
@@ -9,7 +8,6 @@ body {
 }
 
 /* header */
-/*variables*/
 header {
   background-color: rgb(57, 137, 153);
   height: 100px;
@@ -51,7 +49,6 @@ header .tituloInicioSesion {
 }
 
 /* main */
-/*variables*/
 main {
   grid-area: main;
 }
@@ -147,7 +144,6 @@ main .objetivosCursos {
 }
 
 /* footer */
-/*variables*/
 footer {
   background-color: rgb(57, 137, 153);
   height: 50px;
@@ -177,30 +173,32 @@ footer .navItems {
 }
 
 /* Medias */
-/*variables*/
 @media screen and (max-width: 320px) {
-  body {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header" "main" "footer";
-    background-color: beige;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  h1 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
   }
   .inicioDeSesion {
     display: none;
   }
+  .carousel {
+    width: 100%;
+    height: 10em;
+    margin-bottom: 2em;
+  }
   .articulos {
-    display: grid;
-    width: 320px;
+    display: flex;
+    flex-direction: column;
   }
   nav {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  footer {
-    width: 320px;
+  .navbar-nav {
+    margin: 0;
   }
   .cardsCursos {
     width: 100%;
@@ -215,16 +213,17 @@ footer .navItems {
     overflow: hidden;
     background-color: rgb(239, 161, 16);
   }
+  footer {
+    width: 100%;
+  }
+  footer .navFooter {
+    display: none;
+  }
+  footer img {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
-  body {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header" "main" "footer";
-    background-color: beige;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
   .inicioDeSesion {
     display: none;
   }
@@ -238,7 +237,7 @@ footer .navItems {
     align-items: center;
   }
   footer {
-    width: 768px;
+    width: 100%;
   }
   .cardsCursos {
     width: 100%;
