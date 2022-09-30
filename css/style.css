@@ -1,4 +1,3 @@
-/*variables*/
 body {
   display: grid;
   grid-template-columns: auto;
@@ -9,7 +8,6 @@ body {
 }
 
 /* header */
-/*variables*/
 header {
   background-color: rgb(57, 137, 153);
   height: 100px;
@@ -51,7 +49,6 @@ header .tituloInicioSesion {
 }
 
 /* main */
-/*variables*/
 main {
   grid-area: main;
 }
@@ -147,7 +144,6 @@ main .objetivosCursos {
 }
 
 /* footer */
-/*variables*/
 footer {
   background-color: rgb(57, 137, 153);
   height: 50px;
@@ -177,7 +173,6 @@ footer .navItems {
 }
 
 /* Medias */
-/*variables*/
 @media screen and (max-width: 320px) {
   body {
     display: grid;
