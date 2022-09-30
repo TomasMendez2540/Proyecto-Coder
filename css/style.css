@@ -59,7 +59,7 @@ main h1 {
 main p {
   text-align: center;
 }
-main #carouselExampleIndicators {
+main .carousel {
   display: flex;
   align-self: center;
   margin-left: auto;
