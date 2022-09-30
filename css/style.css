@@ -59,7 +59,7 @@ main h1 {
 main p {
   text-align: center;
 }
-main .carousel {
+main #carouselExampleIndicators {
   display: flex;
   align-self: center;
   margin-left: auto;
@@ -186,6 +186,7 @@ footer .navItems {
   .carousel {
     width: 100%;
     height: 10em;
+    margin: 0;
     margin-bottom: 2em;
   }
   .articulos {
