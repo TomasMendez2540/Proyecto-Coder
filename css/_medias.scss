@@ -45,7 +45,7 @@
     }
     .cardsCursos{
         width: 100%;
-        display: flex;
+        display: block;
         max-width: 1100px;
         justify-content: space-evenly;
     }
@@ -61,11 +61,27 @@
     footer {
         width: 100%;
         .navFooter{
-            display: none;
+            font-size: .8em;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .navItems{
+            margin: .5em;
+            padding: 0;
         }
         img{
             display: none;
         }
+    }
+
+    // pag cursos
+
+    .cardsCursos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

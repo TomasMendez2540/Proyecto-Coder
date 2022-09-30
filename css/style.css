@@ -202,7 +202,7 @@ footer .navItems {
   }
   .cardsCursos {
     width: 100%;
-    display: flex;
+    display: block;
     max-width: 1100px;
     justify-content: space-evenly;
   }
@@ -217,10 +217,23 @@ footer .navItems {
     width: 100%;
   }
   footer .navFooter {
-    display: none;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .navItems {
+    margin: 0.5em;
+    padding: 0;
   }
   footer img {
     display: none;
+  }
+  .cardsCursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
